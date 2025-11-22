@@ -5,78 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unscented Essentials</title>
     
-    <!-- Importing the luxury font 'Bodoni Moda' -->
+    <!-- Importing 'Bodoni Moda' -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600&display=swap" rel="stylesheet">
 
     <style>
-        /* 1. The Suit & Tie Foundation */
+        /* 1. PURE BLACK BACKGROUND */
         body {
             margin: 0;
             padding: 0;
-            height: 100vh; /* Full screen height */
+            height: 100vh;
             display: flex;
             justify-content: center; /* Center horizontally */
             align-items: center;     /* Center vertically */
-            
-            /* 
-               This is the magic. Pure black (#000) feels flat.
-               We use a radial gradient to create a "spotlight" effect.
-               It fades from deep charcoal (#1a1a1a) in the middle 
-               to pure pitch black (#000000) at the edges. 
-            */
-            background: radial-gradient(circle at center, #1a1a1a 0%, #000000 70%);
-            color: #333; /* Fallback color */
-            overflow: hidden; /* No scrolling */
+            background-color: #000000; /* Pitch black. No compromise. */
+            overflow: hidden;
         }
 
-        /* 2. The "Unscented Essentials" Logo */
+        /* 2. The Text Treatment */
         h1 {
             font-family: 'Bodoni Moda', serif;
-            font-size: 3.5rem; /* Big and commanding */
-            font-weight: 500;  /* Not too thick, not too thin */
-            text-transform: uppercase; /* Authority */
-            letter-spacing: 0.3em;     /* W I D E spacing = Expensive */
+            font-size: 4rem; 
+            font-weight: 600; 
+            text-transform: uppercase;
+            letter-spacing: 0.25em; 
             margin: 0;
             text-align: center;
             
             /* 
-               THE CHARCOAL EFFECT:
-               We make the text color transparent, then fill it with a 
-               gradient to make it look like brushed metal or matte carbon.
+               VISIBILITY TRICK:
+               Since the background is #000, we use a gradient on the text
+               to make it look like light hitting dark metal.
+               Top: #808080 (Grey light reflection)
+               Bottom: #222222 (Deep charcoal shadow)
             */
-            background: linear-gradient(135deg, #555555 0%, #2a2a2a 50%, #111111 100%);
+            background: linear-gradient(to bottom, #808080 20%, #222222 90%);
             -webkit-background-clip: text;
             background-clip: text;
-            color: transparent;
-
-            /* 
-               THE SHADOWING:
-               This creates the illusion of the letters being "pressed" 
-               or sitting in physical space.
-            */
-            filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.8));
             
-            /* Smooth transition if you hover later */
-            transition: all 0.5s ease;
+            /* Transparent text so gradient shows through */
+            color: transparent; 
+            -webkit-text-fill-color: transparent;
+
+            /* Subtle drop shadow to lift it off the void */
+            filter: drop-shadow(0px 2px 4px rgba(0,0,0,1.0));
         }
 
-        /* Mobile Responsiveness: Scales down gracefully on phones */
+        /* Mobile adjustments */
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.8rem; /* Smaller for phones */
-                letter-spacing: 0.2em;
-                padding: 0 20px; /* Prevents edge touching */
+                font-size: 1.5rem;
+                letter-spacing: 0.15em;
+                padding: 0 15px;
+                line-height: 1.4; 
             }
         }
     </style>
 </head>
 <body>
 
-    
     <h1>Unscented Essentials</h1>
 
 </body>
 </html>
-
