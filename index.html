@@ -1,2 +1,80 @@
-uncsented  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unscented Essentials</title>
+    
+    <!-- Importing the luxury font 'Bodoni Moda' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&display=swap" rel="stylesheet">
 
+    <style>
+        /* 1. The Suit & Tie Foundation */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full screen height */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            
+            /* 
+               This is the magic. Pure black (#000) feels flat.
+               We use a radial gradient to create a "spotlight" effect.
+               It fades from deep charcoal (#1a1a1a) in the middle 
+               to pure pitch black (#000000) at the edges. 
+            */
+            background: radial-gradient(circle at center, #1a1a1a 0%, #000000 70%);
+            color: #333; /* Fallback color */
+            overflow: hidden; /* No scrolling */
+        }
+
+        /* 2. The "Unscented Essentials" Logo */
+        h1 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 3.5rem; /* Big and commanding */
+            font-weight: 500;  /* Not too thick, not too thin */
+            text-transform: uppercase; /* Authority */
+            letter-spacing: 0.3em;     /* W I D E spacing = Expensive */
+            margin: 0;
+            text-align: center;
+            
+            /* 
+               THE CHARCOAL EFFECT:
+               We make the text color transparent, then fill it with a 
+               gradient to make it look like brushed metal or matte carbon.
+            */
+            background: linear-gradient(135deg, #555555 0%, #2a2a2a 50%, #111111 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+
+            /* 
+               THE SHADOWING:
+               This creates the illusion of the letters being "pressed" 
+               or sitting in physical space.
+            */
+            filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.8));
+            
+            /* Smooth transition if you hover later */
+            transition: all 0.5s ease;
+        }
+
+        /* Mobile Responsiveness: Scales down gracefully on phones */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem; /* Smaller for phones */
+                letter-spacing: 0.2em;
+                padding: 0 20px; /* Prevents edge touching */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Unscented Essentials</h1>
+
+</body>
+</html>
